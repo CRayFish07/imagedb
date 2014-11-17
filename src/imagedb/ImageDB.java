@@ -23,8 +23,8 @@ public class ImageDB {
         try
         {
             BlobPros blob=new BlobPros();
-            blob.blobInsert("D:\\java\\ImageDB\\src\\imagedb\\1.jpg");
-            blob.blobRead("1.jpg", 7);
+            blob.blobInsert("D:\\java\\ImageDB\\src\\imagedb\\1.jpg");//这里面的1.jpg代表的是本地照相机照出来的相片，然后存入数据库
+//            blob.blobRead("1.jpg", 7);//这个地方的7代表就是数据库当中图片的id
         }catch(Exception e)
         {
             System.out.print("[Main func error: ]"+e.getMessage());

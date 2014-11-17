@@ -20,13 +20,13 @@ import java.sql.ResultSet;
  */
 public class BlobPros {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/imagedb";
+    private static final String URL = "jdbc:mysql://opencvdb.cxsp5jskrofy.us-west-2.rds.amazonaws.com:3306/imagedb";
     private Connection conn = null;
     private PreparedStatement pstmt = null;
     private ResultSet rs = null;
     private File file = null;
-    String username = "root";
-    String password = "1234";
+    String username = "admin";
+    String password = "cmua2014";
 
     public void blobInsert(String infile) throws Exception {
         FileInputStream fis = null;
